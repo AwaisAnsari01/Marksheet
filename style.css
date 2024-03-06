@@ -1,8 +1,63 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-#container{
-    
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+ background: url(https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: center;
 }
+.wrapper{
+  width: 420px;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  padding: 30px 20px;
+}
+.wrapper .marks{
+    color: white;
+    margin-left: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn{
+   border-radius: 30px;
+   padding: 7px;
+   background-color: transparent;
+   color: white;
+   cursor: pointer;
+   margin-left: 130px;
+}
+.wrapper .inp {
+    width: 380px;
+    height: 35px;
+    border-radius: 25px;
+    padding: 10px;
+    outline:transparent;
+    border: 0;
+}
+.head{
+    margin-bottom: 30px;
+    margin-left: 70px;
+    margin-top:0;
+    cursor: pointer;
+}
+@media(minwidth:400px) {
+    .wrapper{
+        height: 300px;
+        width: 280px;
+    }
+}
+

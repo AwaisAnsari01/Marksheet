@@ -1,12 +1,43 @@
-function sumNum () {
-    var totalNumber = 400;
-    console.log(`Here is Your Total ${totalNumber}`);
-    var obtainNum = Number(input1.value) + Number(input2.value) + Number(input3.value) + Number(input4.value);
-    console.log(`Here Is Your ObtainMarks ${obtainNum}`)
-    var percentage = obtainNum/totalNumber*100
-    console.log(`Here Is Your Percentage ${percentage}`)
-    input1.value=' '
-    input2.value=' '
-    input3.value=' '
-    input4.value=' '
+var chemMarks = document.querySelector('#chem-marks')
+var phyMarks = document.querySelector('#phy-marks')
+var mathMarks = document.querySelector('#math-marks')
+var comMarks = document.querySelector('#com-marks')
+var studentTotal = document.querySelector('#total-marks')
+var percentage = document.querySelector('#percentage')
+var grade = document.querySelector('#grade')
+
+
+function calculatePercentage() {
+    console.log(chemMarks.value);
+    console.log(phyMarks.value);
+    console.log(mathMarks.value);
+    console.log(comMarks.value);
+
+
+
+    
+     
+
+    var totalMarks = 400;
+    var obtainedMarks = +chemMarks.value + +phyMarks.value + +mathMarks.value + +comMarks.value;
+    console.log('obtained marks ===>', obtainedMarks);
+    studentTotal.innerHTML = obtainedMarks;
+
+    var studentPercentage = obtainedMarks / totalMarks * 100;
+    percentage.innerHTML = studentPercentage;
+    
+    chemMarks.value=" "
+    phyMarks.value=" "
+    mathMarks.value=" "
+    comMarks.value=" "
+
+    if(studentPercentage > 80){
+        grade.innerHTML = 'A+'
+    }else if(studentPercentage > 70){
+        grade.innerHTML = 'A'
+    } else if(studentPercentage > 60){
+        grade.innerHTML = 'B'
+    }else{
+        grade.innerHTML = 'FAIL'
+    }
 }

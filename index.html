@@ -7,28 +7,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
+    <div class="wrapper">
         <div>
-            <input id="input1" type="text" placeholder="Enter Physics Number" required>
+            <h1 class="head"><b>Marks Check</b></h1>
+        </div>
+        <div>
+            <input class="inp" type="number" placeholder="enter your chemistry marks" id="chem-marks"><br><br>
+            <input class="inp" type="number" placeholder="enter your physics marks" id="phy-marks"><br><br>
+            <input class="inp" type="number" placeholder="enter your maths marks" id="math-marks"><br><br>
+            <input class="inp" type="number" placeholder="enter your computer marks" id="com-marks"><br><br>
+
+             <button class="btn" onclick="calculatePercentage()">Show Result</button>
         </div>
         <br/>
-        <div>
-            <input id="input2" type="text" placeholder="Enter Biology Number" required>
-        </div>
-        <br/>
-        <div>
-            <input id="input3" type="text" placeholder="Enter Math Number" required>
-        </div>
-        <br/>        
-        <div>
-            <input id="input4" type="text" placeholder="Enter Chemistry Number" required>
-        </div>
-        <br/>
-        <br/>
-        <div>
-            <button onclick="sumNum ()">Generate</button>
+        <div class="marks">
+             <h3>TotalMarks: <span id="total-marks">0</span></h3>
+             <h3>Percantage: <span id="percentage">0</span>%</h3>
+             <h3>Grade: <span id="grade">0</span></h3>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
